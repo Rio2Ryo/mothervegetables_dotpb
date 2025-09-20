@@ -30,12 +30,6 @@ export default function Home() {
       <main className="min-h-screen text-white relative">
         <Header />
         <Hero />
-        <ProjectOverview />
-        <IndustryApproach />
-        <TeamMembers />
-        <Partners />
-        <TokenInfo />{/* */}
-        {/*<FAQ />*/}
         <Footer />
       </main>
     </>

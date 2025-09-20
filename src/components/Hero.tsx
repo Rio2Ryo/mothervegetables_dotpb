@@ -43,29 +43,25 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-7xl mx-auto px-4 transition-all duration-1500 pt-40 md:pt-48 lg:pt-56">
-        {/* Title Section - Single Component */}
+      <div className="relative z-10 text-center max-w-7xl mx-auto px-4 transition-all duration-1500 pt-24 md:pt-32 lg:pt-40">
+        {/* Logo Section */}
         <div className="mb-12">
-          <div
-            className="inline-block"
-            style={{
-              background: 'linear-gradient(135deg, #4ade80 0%, #22c55e 50%, #16a34a 100%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-              backgroundClip: 'text',
-              filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3)) drop-shadow(0 2px 4px rgba(34, 197, 94, 0.2))',
-            }}
-          >
-            <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-black leading-tight">
-              <div>MOTHER VEGETABLES PROJECT</div>
-            </h1>
+          <div className="w-80 md:w-96 mx-auto">
+            <Image
+              src="/logo-uCgt3dQl.png"
+              alt="MOTHER VEGETABLES"
+              width={400}
+              height={150}
+              className="w-full h-auto"
+              priority
+            />
           </div>
           <div className="w-40 md:w-48 h-1.5 bg-gradient-to-r from-transparent via-green-400 to-transparent mx-auto rounded-full mt-6 opacity-80"></div>
         </div>
 
 
         {/* Description - Not in Box */}
-        <div className="max-w-4xl mx-auto mb-12 mt-20 px-4">
+        <div className="max-w-4xl mx-auto mb-8 mt-12 px-4">
           <div className="space-y-3">
             <p className="text-lg md:text-xl text-white leading-relaxed">
               {t({
@@ -88,16 +84,91 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Mother Vegetables Image */}
-        <div className="max-w-2xl mx-auto mb-12 px-4">
-          <Image
-            src="/mpic.jpg"
-            alt="Mother Vegetables"
-            width={600}
-            height={400}
-            className="w-full h-auto rounded-lg shadow-2xl"
-            priority
-          />
+
+        {/* Products Grid */}
+        <div className="max-w-7xl mx-auto mb-12 mt-16 px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            {/* Achieve Section */}
+            <div className="text-center flex flex-col p-6 border border-green-500/40 rounded-lg bg-black/40 backdrop-blur-sm">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-black text-green-400 mb-3 tracking-wide">
+                  Achieve
+                </h3>
+                <p className="text-lg text-white mb-2 font-medium">for Body</p>
+                <p className="text-sm text-gray-300 font-medium mb-6">
+                  {t({
+                    JP: '24時間あなたの目標を達成させます',
+                    EN: 'Achieving your goals 24/7'
+                  })}
+                </p>
+              </div>
+              <div className="max-w-[200px] mx-auto flex-1 flex items-center">
+                <Image
+                  src="/Achive_image.png"
+                  alt="Achieve Product"
+                  width={200}
+                  height={200}
+                  className="w-full h-full object-contain"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Confidence Section */}
+            <div className="text-center flex flex-col p-6 border border-green-500/40 rounded-lg bg-black/40 backdrop-blur-sm">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-black text-green-400 mb-3 tracking-wide">
+                  Confidence
+                </h3>
+                <p className="text-lg text-white mb-2 font-medium">for Skin</p>
+                <p className="text-sm text-gray-300 font-medium mb-6">
+                  {t({
+                    JP: '24時間あなたに自信を与えます',
+                    EN: 'Giving you confidence 24/7'
+                  })}
+                </p>
+              </div>
+              <div className="max-w-[200px] mx-auto flex-1 flex items-center">
+                <Image
+                  src="/confidence_image_touka.png"
+                  alt="Confidence Product"
+                  width={200}
+                  height={200}
+                  className="w-full h-full object-contain"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Forever Section */}
+            <div className="text-center flex flex-col p-6 border border-green-500/40 rounded-lg bg-black/40 backdrop-blur-sm">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-black text-green-400 mb-3 tracking-wide">
+                  Forever
+                </h3>
+                <p className="text-lg text-white mb-2 font-medium">for Pet</p>
+                <p className="text-sm text-gray-300 font-medium mb-6">
+                  {t({
+                    JP: '24時間あなたのペットを支えます',
+                    EN: 'Supporting your pets 24/7'
+                  })}
+                </p>
+              </div>
+              <div className="max-w-[200px] mx-auto flex-1 flex items-center justify-center">
+                <Image
+                  src="/forever_image_touka.png"
+                  alt="Forever Product"
+                  width={200}
+                  height={200}
+                  className="w-full object-contain"
+                  style={{ marginTop: '-8px' }}
+                  priority
+                />
+              </div>
+            </div>
+
+          </div>
         </div>
 
 
