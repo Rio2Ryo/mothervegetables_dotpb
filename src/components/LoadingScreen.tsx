@@ -43,7 +43,7 @@ export default function LoadingScreen() {
 
         {/* Title */}
         <h1 className="text-emerald-400 text-2xl font-bold mb-2 animate-pulse">
-          MOTHER VEGETABLES
+          MOTHER VEGETABLE
         </h1>
         <p className="text-gray-400 text-sm mb-6">
           地球再生プロジェクト起動中...
