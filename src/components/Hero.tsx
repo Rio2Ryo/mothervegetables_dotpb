@@ -49,7 +49,7 @@ export default function Hero() {
           <div className="w-80 md:w-96 mx-auto">
             <Image
               src="/logo-uCgt3dQl.png"
-              alt="MOTHER VEGETABLES"
+              alt="MOTHER VEGETABLE"
               width={400}
               height={150}
               className="w-full h-auto"
@@ -72,7 +72,7 @@ export default function Hero() {
             <p className="text-lg md:text-xl text-white leading-relaxed">
               {t({
                 JP: '「マザーベジタブル」',
-                EN: '"Mother Vegetables"'
+                EN: '"Mother Vegetable"'
               })}
             </p>
             <p className="text-lg md:text-xl text-white leading-relaxed">

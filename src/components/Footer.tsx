@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-6">
         <div className="text-center">
           <div className="text-gray-400 text-sm">
-            © 2025 MOTHER VEGETABLES PROJECT.<br />
+            © 2025 MOTHER VEGETABLE PROJECT.<br />
             All rights reserved.
           </div>
         </div>
