@@ -7,7 +7,9 @@
       "Bash(npm uninstall:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "WebFetch(domain:confidence-web-kohl.vercel.app)",
+      "Bash(mkdir:*)"
     ],
     "deny": [],
     "ask": []
