@@ -10,7 +10,11 @@
       "Bash(git pull:*)",
       "WebFetch(domain:confidence-web-kohl.vercel.app)",
       "Bash(mkdir:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Read(//Users/mr/mazavege_chan/**)",
+      "Read(//Users/mr/**)",
+      "Bash(ls:*)",
+      "Bash(git rebase:*)"
     ],
     "deny": [],
     "ask": []

@@ -87,23 +87,24 @@ export default function Hero() {
 
         {/* Products Grid */}
         <div className="max-w-7xl mx-auto mb-12 mt-16 px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* First Row - 3 products */}
+          <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-8 mb-4 md:mb-8">
 
             {/* Achieve Section */}
-            <div className="text-center flex flex-col p-6 border border-green-500/40 rounded-lg bg-black/40 backdrop-blur-sm">
-              <div>
-                <h3 className="text-2xl md:text-3xl font-black text-green-400 mb-3 tracking-wide">
+            <div className="text-center flex flex-col p-2 sm:p-4 md:p-6 border border-green-500/40 rounded-lg bg-black/40 backdrop-blur-sm h-full">
+              <div className="min-h-[80px] sm:min-h-[100px] md:min-h-[120px]">
+                <h3 className="text-sm sm:text-xl md:text-3xl font-black text-green-400 mb-1 sm:mb-2 md:mb-3 tracking-wide">
                   Achieve
                 </h3>
-                <p className="text-lg text-white mb-2 font-medium">for Body</p>
-                <p className="text-sm text-gray-300 font-medium mb-6">
+                <p className="text-xs sm:text-sm md:text-lg text-white mb-0.5 sm:mb-1 font-medium">for Body</p>
+                <p className="text-xs sm:text-xs md:text-sm text-gray-300 font-medium">
                   {t({
                     JP: '24時間あなたの目標を達成させます',
                     EN: 'Achieving your goals 24/7'
                   })}
                 </p>
               </div>
-              <div className="max-w-[200px] mx-auto flex-1 flex items-center">
+              <div className="max-w-[80px] sm:max-w-[150px] md:max-w-[200px] mx-auto flex-1 flex items-center mt-2 sm:mt-4 md:mt-6">
                 <Image
                   src="/Achive_image.png"
                   alt="Achieve Product"
@@ -116,20 +117,20 @@ export default function Hero() {
             </div>
 
             {/* Confidence Section */}
-            <div className="text-center flex flex-col p-6 border border-green-500/40 rounded-lg bg-black/40 backdrop-blur-sm">
-              <div>
-                <h3 className="text-2xl md:text-3xl font-black text-green-400 mb-3 tracking-wide">
+            <a href="/confidence" className="text-center flex flex-col p-2 sm:p-4 md:p-6 border border-green-500/40 rounded-lg bg-black/40 backdrop-blur-sm hover:border-green-400/60 transition-all duration-300 h-full">
+              <div className="min-h-[80px] sm:min-h-[100px] md:min-h-[120px]">
+                <h3 className="text-sm sm:text-xl md:text-3xl font-black text-green-400 mb-1 sm:mb-2 md:mb-3 tracking-wide">
                   Confidence
                 </h3>
-                <p className="text-lg text-white mb-2 font-medium">for Skin</p>
-                <p className="text-sm text-gray-300 font-medium mb-6">
+                <p className="text-xs sm:text-sm md:text-lg text-white mb-0.5 sm:mb-1 font-medium">for Skin</p>
+                <p className="text-xs sm:text-xs md:text-sm text-gray-300 font-medium">
                   {t({
                     JP: '24時間あなたに自信を与えます',
                     EN: 'Giving you confidence 24/7'
                   })}
                 </p>
               </div>
-              <div className="max-w-[200px] mx-auto flex-1 flex items-center">
+              <div className="max-w-[80px] sm:max-w-[150px] md:max-w-[200px] mx-auto flex-1 flex items-center mt-2 sm:mt-4 md:mt-6">
                 <Image
                   src="/confidence_image_touka.png"
                   alt="Confidence Product"
@@ -139,23 +140,23 @@ export default function Hero() {
                   priority
                 />
               </div>
-            </div>
+            </a>
 
             {/* Forever Section */}
-            <div className="text-center flex flex-col p-6 border border-green-500/40 rounded-lg bg-black/40 backdrop-blur-sm">
-              <div>
-                <h3 className="text-2xl md:text-3xl font-black text-green-400 mb-3 tracking-wide">
+            <div className="text-center flex flex-col p-2 sm:p-4 md:p-6 border border-green-500/40 rounded-lg bg-black/40 backdrop-blur-sm h-full">
+              <div className="min-h-[80px] sm:min-h-[100px] md:min-h-[120px]">
+                <h3 className="text-sm sm:text-xl md:text-3xl font-black text-green-400 mb-1 sm:mb-2 md:mb-3 tracking-wide">
                   Forever
                 </h3>
-                <p className="text-lg text-white mb-2 font-medium">for Pet</p>
-                <p className="text-sm text-gray-300 font-medium mb-6">
+                <p className="text-xs sm:text-sm md:text-lg text-white mb-1 sm:mb-2 font-medium">for Pet</p>
+                <p className="text-xs sm:text-xs md:text-sm text-gray-300 font-medium">
                   {t({
                     JP: '24時間あなたのペットを支えます',
                     EN: 'Supporting your pets 24/7'
                   })}
                 </p>
               </div>
-              <div className="max-w-[200px] mx-auto flex-1 flex items-center justify-center">
+              <div className="max-w-[200px] mx-auto flex-1 flex items-center justify-center mt-2 sm:mt-4 md:mt-6">
                 <Image
                   src="/forever_image_touka.png"
                   alt="Forever Product"
@@ -168,6 +169,63 @@ export default function Hero() {
               </div>
             </div>
 
+          </div>
+
+          {/* Second Row - Achieve PRO */}
+          <div className="grid grid-cols-3 gap-2 sm:gap-4 md:gap-8">
+            {/* Achieve for PRO Athlete */}
+            <div className="text-center flex flex-col p-2 sm:p-4 md:p-6 border border-green-500/40 rounded-lg bg-black/40 backdrop-blur-sm h-full">
+              <div className="min-h-[80px] sm:min-h-[100px] md:min-h-[120px]">
+                <h3 className="text-sm sm:text-xl md:text-3xl font-black text-green-400 mb-1 sm:mb-2 md:mb-3 tracking-wide">
+                  Achieve
+                </h3>
+                <p className="text-xs sm:text-sm md:text-lg text-white mb-0.5 sm:mb-1 font-medium">for PRO Athlete</p>
+                <p className="text-xs sm:text-xs md:text-sm text-gray-300 font-medium">
+                  {t({
+                    JP: '24時間あなたをより高みに導きます',
+                    EN: 'Guiding you to greater heights 24/7'
+                  })}
+                </p>
+              </div>
+              <div className="max-w-[80px] sm:max-w-[150px] md:max-w-[200px] mx-auto flex-1 flex items-center mt-2 sm:mt-4 md:mt-6">
+                <Image
+                  src="/athlete.png"
+                  alt="Achieve PRO Product"
+                  width={200}
+                  height={200}
+                  className="w-full h-full object-contain"
+                  priority
+                />
+              </div>
+            </div>
+            {/* for Men Card */}
+            <div className="text-center flex flex-col p-2 sm:p-4 md:p-6 border border-green-500/40 rounded-lg bg-black/40 backdrop-blur-sm h-full">
+              <div className="min-h-[80px] sm:min-h-[100px] md:min-h-[120px]">
+                <h3 className="text-sm sm:text-xl md:text-3xl font-black text-green-400 mb-1 sm:mb-2 md:mb-3 tracking-wide">
+                  Confidence
+                </h3>
+                <p className="text-xs sm:text-sm md:text-lg text-white mb-0.5 sm:mb-1 font-medium">for Men</p>
+                <p className="text-xs sm:text-xs md:text-sm text-gray-300 font-medium">
+                  {t({
+                    JP: '24時間清潔感による自信を与えます',
+                    EN: 'Confidence through cleanliness 24/7'
+                  })}
+                </p>
+              </div>
+              <div className="max-w-[80px] sm:max-w-[150px] md:max-w-[200px] mx-auto flex-1 flex items-center mt-2 sm:mt-4 md:mt-6">
+                <Image
+                  src="/forMen.png"
+                  alt="Confidence for men Product"
+                  width={200}
+                  height={200}
+                  className="w-full h-full object-contain"
+                  style={{ transform: 'rotateY(180deg)' }}
+                  priority
+                />
+              </div>
+            </div>
+            {/* Empty cell for grid alignment */}
+            <div></div>
           </div>
         </div>
 

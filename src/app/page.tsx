@@ -4,11 +4,8 @@ import { useEffect, useState } from 'react'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import ProjectOverview from '@/components/ProjectOverview'
-import IndustryApproach from '@/components/IndustryApproach'
-import TeamMembers from '@/components/TeamMembers'
 import Partners from '@/components/Partners'
-import TokenInfo from '@/components/TokenInfo'
-import FAQ from '@/components/FAQ'
+import IndustryApproach from '@/components/IndustryApproach'
 import Footer from '@/components/Footer'
 import LoadingScreen from '@/components/LoadingScreen'
 
@@ -30,6 +27,9 @@ export default function Home() {
       <main className="min-h-screen text-white relative">
         <Header />
         <Hero />
+        <ProjectOverview />
+        <IndustryApproach />
+        <Partners />
         <Footer />
       </main>
     </>
